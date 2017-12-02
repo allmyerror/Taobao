@@ -28,7 +28,7 @@ driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
 wait = WebDriverWait(driver, 10)
 
 # PhantomJS默认窗口较小，改大点，设置为笔记本的分辨率
-driver.set_window_size(1400 ,900)
+driver.set_window_size(1366, 768)
 
 
 def search_and_first_page():
