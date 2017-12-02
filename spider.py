@@ -1,3 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+-------------------------------------------------
+   File Name：     spider.py
+   Description :
+   Author :        sean
+   date：          2017-12-02
+-------------------------------------------------
+   Change Activity:
+                   2017-12-02: 上传到github by sean
+-------------------------------------------------
+"""
+
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
@@ -14,7 +27,7 @@ db = client[MONGO_DB]
 driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
 wait = WebDriverWait(driver, 10)
 
-# PhantomJS默认窗口较小
+# PhantomJS默认窗口较小，改大点，设置为笔记本的分辨率
 driver.set_window_size(1400 ,900)
 
 
